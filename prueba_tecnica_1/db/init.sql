@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS deposits (
+  id SERIAL PRIMARY KEY,
+  txid VARCHAR(100) NOT NULL,
+  address VARCHAR(100) NOT NULL,
+  amount NUMERIC(20, 8) NOT NULL,
+  confirmations INTEGER NOT NULL,
+  category VARCHAR(20) NOT NULL
+);
