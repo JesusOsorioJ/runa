@@ -8,16 +8,8 @@ type ImageData = {
 };
 
 function App() {
-  const [image1, setImage1] = useState<ImageData>({
-    no: 1,
-    color: "#ca3c3c",
-    text: "consectetur vehicula fermentum, ipsum justo elit. sapien ut quam sit Pellentesque pharetra fringilla. a nisl adipiscing Fusce Lorem varius, vulputate facilisis. vel,entesque ipsum sapien fe ",
-  });
-  const [image2, setImage2] = useState<ImageData>({
-    no: 1,
-    color: "#ca3c3c",
-    text: "consectetur vehicula fermentum, ipsum justo elit. sapien ut quam sit Pellentesque pharetra fringilla. a nisl adipiscing Fusce Lorem varius, vulputate facilisis. vel,entesque ipsum sapien fe ",
-  });
+  const [image1, setImage1] = useState<ImageData>({no: 1, color: "#ca3c3c", text: "consectetur vehicula fermentum, ipsum justo elit. sapien ut quam sit Pellentesque pharetra fringilla. a nisl adipiscing Fusce Lorem varius, vulputate facilisis. vel,entesque ipsum sapien fe ",});
+  const [image2, setImage2] = useState<ImageData>({no: 21, color: "#ca3c3c", text: "consectetur vehicula fermentum, ipsum justo elit. sapien ut quam sit Pellentesque pharetra fringilla. a nisl adipiscing Fusce Lorem varius, vulputate facilisis. vel,entesque ipsum sapien fe ",});
 
   const pic1: ImageData[] = [
     {no: 1, color: "#ca3c3c", text: "consectetur vehicula fermentum, ipsum justo elit. sapien ut quam sit Pellentesque pharetra fringilla. a nisl adipiscing Fusce Lorem varius, vulputate facilisis. vel,entesque ipsum sapien fe ",},
@@ -28,7 +20,7 @@ function App() {
   ];
 
   const pic2: ImageData[] = [
-    {no: 21, color: "#ca3c3c", text: "agregar aca un lorem iprun randon de 20 a 40 a cada elemento",},
+    {no: 21, color: "#ca3c3c", text: "consectetur vehicula fermentum, ipsum justo elit. sapien ut quam sit Pellentesque pharetra fringilla. a nisl adipiscing Fusce Lorem varius, vulputate facilisis. vel,entesq",},
     {no: 22, color: "#c0ca3c", text: "ac nisl Pellentesque consectetur ipsum vulputate justo dictum fermentum, sapien ut vel quam varius, ex amet, Lorem pharetra Fusce adipiscing justo fringilla. sit dolor facilisis. elit. a vehicula",},
     {no: 23, color: "#3cca3e", text: "Fusce vulputate adipiscing vehicula quam dictum facilisis. nisl Pellentesque fermentum, ut amet, a justo Lorem ipsum ex vel dolor fringilla. justo sapien varius,",},
     {no: 24, color: "#3ccac5", text: "sapien justo Pellentesque Fusce sit ipsum amet, vulputate elit. ex vehicula dictum ac ut pharetra Lorem a varius, adipiscing vel consectetur justo quam",},
@@ -40,6 +32,7 @@ function App() {
 
   return (
     <div className="flex flex-col gap-3 items-start">
+      <p className="text-3xl font-bold">Accesible interactive JavaScript & CSS driven picture gallery</p>
       <Target
         title="Gallery 1: Bog snorkelling"
         pic={pic1}
