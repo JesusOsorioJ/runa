@@ -33,7 +33,7 @@ docker-compose up
 
 1. Desde el terminal, usando psql, acceda al contenedor de la base de datos:
 ```bash
-docker exec -it api-db-1 psql -U postgres -d crypto_payments
+docker exec -it prueba_tecnica_1-db-1 psql -U postgres -d crypto_payments
 ```
 
 2. Ver las tablas disponibles en SQL:
